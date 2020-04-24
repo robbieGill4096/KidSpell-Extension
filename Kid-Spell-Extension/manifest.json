@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "Kid-Spell",
+	"version":"1",
+	"description": "An application to help kids with spelling",
+	"icons": { "16": "images/icon16.png",
+             "48": "images/icon48.png",
+             "128": "images/icon128.png" },
+	"author": "Robbie Gill",
+	"homepage_url": "https://cast.boisestate.edu/cast-simple/",
+	"browser_action": {
+	 "default_icon": "images/icon48.png",
+	 "default_popup": "popup.html"
+	},
+	"permissions": [
+   	 "activeTab",
+    	 "storage",
+    	 "contextMenus"
+  ]
+
+
+
+}
