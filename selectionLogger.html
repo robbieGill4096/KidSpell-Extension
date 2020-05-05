@@ -1,0 +1,31 @@
+<input value="Try selecting some text in this element.">
+<p id="log"></p>
+<script>
+function logSelection(event) {
+  const log = document.getElementById('log');
+  const selection = event.target.value.substring(event.target.selectionStart, event.target.selectionEnd);
+  log.textContent = `You selected: ${selection}`;
+console.log(selection);
+fetch('https://cast.boisestate.edu/test/splchk.php?word='+selection+'&max=5')
+.then(res => res.text())// your code
+.then(res => res =res.split(','))// your code
+//.then(data => alert(data))
+.then(data => passer(data))
+}
+
+function passer(arrVal){
+console.log(arrVal[0].substring(15,arrVal[0].length));//original value
+console.log(arrVal[1].substring(24,arrVal[1].length));
+console.log(arrVal[2].substring(5,arrVal[2].length));
+console.log(arrVal[3].substring(5,arrVal[3].length));
+console.log(arrVal[4].substring(5,arrVal[3].length));
+
+console.log(arrVal[5].substring(5,arrVal[5].length-6));//last suggestion	
+
+}
+
+
+
+const input = document.querySelector('input');
+input.addEventListener('select', logSelection);
+</script>
