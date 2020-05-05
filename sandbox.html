@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<script>
+
+//fetch('https://reqres.in/api/users')
+fetch('https://cast.boisestate.edu/test/splchk.php?word=dinoser&max=5')
+//.then(res => res.json())
+.then(res => res.text())// your code
+.then(res => res =res.split(','))// your code
+
+//.then(data => console.log(data))
+.then(data => passer(data))
+
+function passer(arrVal){
+console.log(arrVal[2].substring(16,"end"));
+console.log(arrVal[3]);
+console.log(arrVal[4]);
+console.log(arrVal[5].substring(0,19));
+//console.log(arrVal[6]);
+//console.log(arrVal[7]);
+}
+</script>
