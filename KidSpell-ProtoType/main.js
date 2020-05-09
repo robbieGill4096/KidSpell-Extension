@@ -37,19 +37,21 @@ function passer(arrVal){
     
     
 
-document.getElementById("Suggestion1").innerHTML=arrVal[0].substring(15,arrVal[0].length);
-document.getElementById("Suggestion2").innerHTML=arrVal[1].substring(24,arrVal[1].length);
-document.getElementById("Suggestion3").innerHTML=arrVal[2].substring(5,arrVal[2].length);
-document.getElementById("Suggestion4").innerHTML=arrVal[3].substring(5,arrVal[3].length);
-document.getElementById("Suggestion5").innerHTML=arrVal[4].substring(5,arrVal[3].length);
+document.getElementById("suggestion1").innerHTML=arrVal[0].substring(15,arrVal[0].length);
+document.getElementById("suggestion2").innerHTML=arrVal[1].substring(24,arrVal[1].length);
+document.getElementById("suggestion3").innerHTML=arrVal[2].substring(5,arrVal[2].length);
+document.getElementById("suggestion4").innerHTML=arrVal[3].substring(5,arrVal[3].length);
+document.getElementById("suggestion5").innerHTML=arrVal[4].substring(5,arrVal[3].length);
 
 }
 
 
+function showSuggestions(arrVal){
+  var suggestions = document.getElementById("suggestion-popover-wrapper");
+  suggestions.style.display = "block";
+}
 
-    
-
-
-
-
-
+function hideSugesstions(){
+  var suggestions = document.getElementById("suggestion-popover-wrapper");
+  suggestions.style.display = "none";
+}

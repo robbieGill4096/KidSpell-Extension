@@ -1,0 +1,44 @@
+.search-bar-wrapper {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.search-bar {
+    height: 40px;
+    width: 600px;
+    font-size: 35px;
+}
+
+
+.suggestion-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.suggested-word {
+    border: none;
+    color: black;
+    background-color: #ffbb3c;
+    width: 400px;
+    height: 50px;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.suggested-word-close {
+    border: none;
+    color: black;
+    background-color: #fd5d47;
+    width: 400px;
+    height: 50px;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}

@@ -1,29 +1,28 @@
-<!doctype html>
-<input placeholder="Enter some text" name="name"/>
-<p id="values"></p>
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="search-bar-wrapper">
+        <input spellcheck="false" autocomplete="off" autocapitalise="off" autocorrect="off" class="search-bar" contenteditable="true" placeholder="Search..."/>
+    </div>
+    <p id="values"></p>
+
+    <button onmouseover="showSuggestions()">hover to show suggestions</button>  
+
+    <div id="suggestion-popover-wrapper" class="suggestion-popover-wrapper">
+        <div id="suggestion-box" class="suggestion-box">
+            <button id="suggestion1" class="suggested-word" type="button"></button>
+            <button id="suggestion2" class="suggested-word" type="button"></button>
+            <button id="suggestion3" class="suggested-word" type="button"></button>
+            <button id="suggestion4" class="suggested-word" type="button"></button>
+            <button id="suggestion5" class="suggested-word" type="button"></button>
+            <button id="suggested-word-close" class="suggested-word-close" type="button" onclick="hideSugesstions()">
+                Close
+            </button>
+        <div>
+    </div>
 
 
-<name=div class="suggestionbox">
-    <button id = "Suggestion1"class="favorite styled"
-        type="button">
-    suggestion1
-</button>
-    <button id = "Suggestion2"class="favorite styled"
-        type="button">
-    Suggestion2
-</button>
-    <button id = "Suggestion3"class="favorite styled"
-        type="button">
-    Suggestion3
-</button>
-    <button id = "Suggestion4"class="favorite styled"
-        type="button">
-    Suggestion4
-</button>
-    <button id = "Suggestion5"class="favorite styled"
-        type="button">
-    Suggestion5
-</button>
- 
-    <div>
-<script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
